@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="mainAr">
+    <p class="mn">Enter The Text</p>
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="Type Here.."></textarea>
+        <br>
+        <button class="btn">SUBMIT</button>
+    </div>
+    <script>
+        function eval(){
+            const txt=document.querySelector('#text').value;
+            const arr=txt.split(" ");
+            const arr2=txt.split("\n");
+            alert("Number of characters is " + txt.length + ", number of words in the entered text is "+arr.length+" and number of lines in the entered text is "+arr2.length);
+        }
+        const btn = document.querySelector('.btn');
+        btn.addEventListener("click",eval);
+    </script>
+</body>
+</html>

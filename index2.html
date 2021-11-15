@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div class="modal-container">
+        <div class="modal" id="loginModal">
+            <h1 class="modal-title">Log in to your account</h1>
+            <form action="" method="POST" class="form">
+                <div class="input-container">
+                    <label for="loginUsername" class="label-name">Email</label>
+                    <input id="loginUsername" type="text" placeholder="Email or Username" name="loginUsername" autocomplete="off" required>
+                </div>
+                <div class="input-container">
+                    <label for="password" class="label-name">Password</label>
+                    <input id="password" type="password" placeholder="Password" name="loginPassword" required>
+                </div>
+                <button type="submit" class="button">Log In</button>
+                <p class="link-options">Or continue with</p>
+                <img src="google.png" class="login-icon" alt="Google login">
+            </form>
+            <a href="" class="register-link">No account? Sign up</a>
+        </div>
+    </div>
+</body>
+
+</html>
